@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Performance" parallel="false">
+
+    <test name="App Test">
+        <classes>
+            <class name="org.ffa.tests.LoginTest"/>
+            <class name="org.ffa.tests.performance.GoToBookPageTests"/>
+        </classes>
+    </test>
+</suite>
