@@ -23,7 +23,7 @@ public class BookPage extends BasePage {
     @FindBy(xpath = "//a[@sw-tooltip='ApplicationMenuItem.Library.hint']")
     private Link library;
 
-    @FindBy(xpath = "//android.webkit.WebView[1]/android.view.View[7]/android.widget.Image[1]")
+    @FindBy(xpath = "//android.webkit.WebView[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View[2]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.widget.Image[1]")
     private Element bookImage;
 
     @FindBy(xpath = "//android.webkit.WebView[1]/android.widget.ListView[1]//android.view.View[contains(@content-desc, \"Info\")]")

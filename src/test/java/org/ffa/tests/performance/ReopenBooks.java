@@ -85,8 +85,8 @@ public class ReopenBooks extends BaseTest {
         BookPage bookPage = new BookPage();
         MainMenuPage mainMenuPage = new MainMenuPage();
 
-        libraryPage.swipeFromBottomToTop(6);
-        bookName = "The Dawn-Breakers"; // "Andersen's Fairy Tales"
+//        libraryPage.swipeFromBottomToTop(6);
+        bookName = "Andersen's Fairy Tales"; // "Andersen's Fairy Tales" "The Dawn-Breakers"
         libraryPage.selectBook(bookName);
         startTimer("Open book: " + bookName);
         assertTrue(bookPage.verifyBookImageIsDisplayed());
@@ -97,7 +97,7 @@ public class ReopenBooks extends BaseTest {
         mainMenuPage.tapLibraryFromBook();
         assertTrue(libraryPage.verifyFirstBookImageIsDisplayed());
 
-        libraryPage.swipeFromBottomToTop(6);
+//        libraryPage.swipeFromBottomToTop(6);
         libraryPage.selectBook(bookName);
         startTimer("Open book: " + bookName);
         assertTrue(bookPage.verifyBookImageIsDisplayed());
@@ -108,8 +108,8 @@ public class ReopenBooks extends BaseTest {
         mainMenuPage.tapLibraryFromBook();
         assertTrue(libraryPage.verifyFirstBookImageIsDisplayed());
 
-        libraryPage.swipeFromBottomToTop(1);
-        bookName = "Old Friends"; // "More Jataka Tales"
+//        libraryPage.swipeFromBottomToTop(1);
+        bookName = "More Jataka Tales"; // "More Jataka Tales" "Old Friends"
         libraryPage.selectBook(bookName);
         startTimer("Open book: " + bookName);
         assertTrue(bookPage.verifyBookImageIsDisplayed());
@@ -120,7 +120,7 @@ public class ReopenBooks extends BaseTest {
         mainMenuPage.tapLibraryFromBook();
         assertTrue(libraryPage.verifyFirstBookImageIsDisplayed());
 
-        libraryPage.swipeFromBottomToTop(1);
+//        libraryPage.swipeFromBottomToTop(1);
         libraryPage.selectBook(bookName);
         startTimer("Open book: " + bookName);
         assertTrue(bookPage.verifyBookImageIsDisplayed());
@@ -131,8 +131,8 @@ public class ReopenBooks extends BaseTest {
         mainMenuPage.tapLibraryFromBook();
         assertTrue(libraryPage.verifyFirstBookImageIsDisplayed());
 
-        libraryPage.swipeFromBottomToTop(4);
-        bookName = "Mosses from an Old Manse"; // "Just So Stories"
+//        libraryPage.swipeFromBottomToTop(4);
+        bookName = "Just So Stories"; // "Just So Stories" "Mosses from an Old Manse"
         libraryPage.selectBook(bookName);
         startTimer("Open book: " + bookName);
         assertTrue(bookPage.verifyBookImageIsDisplayed());
@@ -143,220 +143,220 @@ public class ReopenBooks extends BaseTest {
         mainMenuPage.tapLibraryFromBook();
         assertTrue(libraryPage.verifyFirstBookImageIsDisplayed());
 
-        libraryPage.swipeFromBottomToTop(4);
+//        libraryPage.swipeFromBottomToTop(4);
         libraryPage.selectBook(bookName);
         startTimer("Open book: " + bookName);
         assertTrue(bookPage.verifyBookImageIsDisplayed());
         stopTimer();
-//
-//        bookPage.tapMenu();
-//        sleep(1000);
-//        mainMenuPage.tapLibraryFromBook();
-//        assertTrue(libraryPage.verifyFirstBookImageIsDisplayed());
-//
-//        bookName = "Peter Pan";
-//        libraryPage.selectBook(bookName);
-//        startTimer("Open book: " + bookName);
-//        assertTrue(bookPage.verifyBookImageIsDisplayed());
-//        stopTimer();
-//
-//        bookPage.tapMenu();
-//        sleep(1000);
-//        mainMenuPage.tapLibraryFromBook();
-//        assertTrue(libraryPage.verifyFirstBookImageIsDisplayed());
-//
-//        libraryPage.selectBook(bookName);
-//        startTimer("Open book: " + bookName);
-//        assertTrue(bookPage.verifyBookImageIsDisplayed());
-//        stopTimer();
-//
-//        bookPage.tapMenu();
-//        sleep(1000);
-//        mainMenuPage.tapLibraryFromBook();
-//        assertTrue(libraryPage.verifyFirstBookImageIsDisplayed());
-//
-//        sleep(40000);
-//        libraryPage.swipeFromBottomToTop(2); // 7
-//        bookName = "Tarzan of the Apes";
-//        libraryPage.selectBook(bookName);
-//        startTimer("Open book: " + bookName);
-//        assertTrue(bookPage.verifyBookImageIsDisplayed());
-//        stopTimer();
-//
-//        bookPage.tapMenu();
-//        sleep(1000);
-//        mainMenuPage.tapLibraryFromBook();
-//        assertTrue(libraryPage.verifyFirstBookImageIsDisplayed());
-//
-//        libraryPage.swipeFromBottomToTop(2); // 7
-//        libraryPage.selectBook(bookName);
-//        startTimer("Open book: " + bookName);
-//        assertTrue(bookPage.verifyBookImageIsDisplayed());
-//        stopTimer();
-//
-//        bookPage.tapMenu();
-//        sleep(1000);
-//        mainMenuPage.tapLibraryFromBook();
-//        assertTrue(libraryPage.verifyFirstBookImageIsDisplayed());
-//
-//        libraryPage.swipeFromBottomToTop(1); //4
-//        bookName = "Narrative of the Life of Frederick Douglass";
-//        libraryPage.selectBook(bookName);
-//        startTimer("Open book: " + bookName);
-//        assertTrue(bookPage.verifyBookImageIsDisplayed());
-//        stopTimer();
-//
-//        bookPage.tapMenu();
-//        sleep(1000);
-//        mainMenuPage.tapLibraryFromBook();
-//        assertTrue(libraryPage.verifyFirstBookImageIsDisplayed());
-//
-//        libraryPage.swipeFromBottomToTop(1); //4
-//        libraryPage.selectBook(bookName);
-//        startTimer("Open book: " + bookName);
-//        assertTrue(bookPage.verifyBookImageIsDisplayed());
-//        stopTimer();
-//
-//        bookPage.tapMenu();
-//        sleep(1000);
-//        mainMenuPage.tapLibraryFromBook();
-//        assertTrue(libraryPage.verifyFirstBookImageIsDisplayed());
-//
-//        libraryPage.swipeFromBottomToTop(1); //5
-//        bookName = "King Solomon's Mines";
-//        libraryPage.selectBook(bookName);
-//        startTimer("Open book: " + bookName);
-//        assertTrue(bookPage.verifyBookImageIsDisplayed());
-//        stopTimer();
-//
-//        bookPage.tapMenu();
-//        sleep(1000);
-//        mainMenuPage.tapLibraryFromBook();
-//        assertTrue(libraryPage.verifyFirstBookImageIsDisplayed());
-//
-//        libraryPage.swipeFromBottomToTop(1); //5
-//        libraryPage.selectBook(bookName);
-//        startTimer("Open book: " + bookName);
-//        assertTrue(bookPage.verifyBookImageIsDisplayed());
-//        stopTimer();
-//
-//        bookPage.tapMenu();
-//        sleep(1000);
-//        mainMenuPage.tapLibraryFromBook();
-//        assertTrue(libraryPage.verifyFirstBookImageIsDisplayed());
-//
-//        libraryPage.swipeFromBottomToTop(1); //6
-//        bookName = "David Crockett: His Life and Adventures";
-//        libraryPage.selectBook(bookName);
-//        startTimer("Open book: " + bookName);
-//        assertTrue(bookPage.verifyBookImageIsDisplayed());
-//        stopTimer();
-//
-//        bookPage.tapMenu();
-//        sleep(1000);
-//        mainMenuPage.tapLibraryFromBook();
-//        assertTrue(libraryPage.verifyFirstBookImageIsDisplayed());
-//
-//        libraryPage.swipeFromBottomToTop(1); //6
-//        libraryPage.selectBook(bookName);
-//        startTimer("Open book: " + bookName);
-//        assertTrue(bookPage.verifyBookImageIsDisplayed());
-//        stopTimer();
-//
-//        bookPage.tapMenu();
-//        sleep(1000);
-//        mainMenuPage.tapLibraryFromBook();
-//        assertTrue(libraryPage.verifyFirstBookImageIsDisplayed());
-//
-//        bookName = "The Kreutzer Sonata";
-//        libraryPage.selectBook(bookName);
-//        startTimer("Open book: " + bookName);
-//        assertTrue(bookPage.verifyBookImageIsDisplayed());
-//        stopTimer();
-//
-//        bookPage.tapMenu();
-//        sleep(1000);
-//        mainMenuPage.tapLibraryFromBook();
-//        assertTrue(libraryPage.verifyFirstBookImageIsDisplayed());
-//
-//        libraryPage.selectBook(bookName);
-//        startTimer("Open book: " + bookName);
-//        assertTrue(bookPage.verifyBookImageIsDisplayed());
-//        stopTimer();
-//
-//        bookPage.tapMenu();
-//        sleep(1000);
-//        mainMenuPage.tapLibraryFromBook();
-//        assertTrue(libraryPage.verifyFirstBookImageIsDisplayed());
-//
-//        bookName = "The Turn of the Screw";
-//        libraryPage.selectBook(bookName);
-//        startTimer("Open book: " + bookName);
-//        assertTrue(bookPage.verifyBookImageIsDisplayed());
-//        stopTimer();
-//
-//        bookPage.tapMenu();
-//        sleep(1000);
-//        mainMenuPage.tapLibraryFromBook();
-//        assertTrue(libraryPage.verifyFirstBookImageIsDisplayed());
-//
-//        libraryPage.selectBook(bookName);
-//        startTimer("Open book: " + bookName);
-//        assertTrue(bookPage.verifyBookImageIsDisplayed());
-//        stopTimer();
-//
-//        bookPage.tapMenu();
-//        sleep(1000);
-//        mainMenuPage.tapLibraryFromBook();
-//        assertTrue(libraryPage.verifyFirstBookImageIsDisplayed());
-//
-//        sleep(40000);
-//        libraryPage.swipeFromBottomToTop(2); //10
-//        bookName = "A Connecticut Yankee in King Arthur's Court";
-//        libraryPage.selectBook(bookName);
-//        startTimer("Open book: " + bookName);
-//        assertTrue(bookPage.verifyBookImageIsDisplayed());
-//        stopTimer();
-//
-//        bookPage.tapMenu();
-//        sleep(1000);
-//        mainMenuPage.tapLibraryFromBook();
-//        assertTrue(libraryPage.verifyFirstBookImageIsDisplayed());
-//
-//        sleep(40000);
-//        libraryPage.swipeFromBottomToTop(2); //10
-//        libraryPage.selectBook(bookName);
-//        startTimer("Open book: " + bookName);
-//        assertTrue(bookPage.verifyBookImageIsDisplayed());
-//        stopTimer();
-//
-//        bookPage.tapMenu();
-//        sleep(1000);
-//        mainMenuPage.tapLibraryFromBook();
-//        assertTrue(libraryPage.verifyFirstBookImageIsDisplayed());
-//
-//        libraryPage.swipeFromBottomToTop(1); //5
-//        bookName = "Candide";
-//        libraryPage.selectBook(bookName);
-//        startTimer("Open book: " + bookName);
-//        assertTrue(bookPage.verifyBookImageIsDisplayed());
-//        stopTimer();
-//
-//        bookPage.tapMenu();
-//        sleep(1000);
-//        mainMenuPage.tapLibraryFromBook();
-//        assertTrue(libraryPage.verifyFirstBookImageIsDisplayed());
-//
-//        libraryPage.swipeFromBottomToTop(1); //5
-//        libraryPage.selectBook(bookName);
-//        startTimer("Open book: " + bookName);
-//        assertTrue(bookPage.verifyBookImageIsDisplayed());
-//        stopTimer();
-//
-//        bookPage.tapMenu();
-//        sleep(1000);
-//        mainMenuPage.tapLibraryFromBook();
-//        assertTrue(libraryPage.verifyFirstBookImageIsDisplayed());
+
+        bookPage.tapMenu();
+        sleep(1000);
+        mainMenuPage.tapLibraryFromBook();
+        assertTrue(libraryPage.verifyFirstBookImageIsDisplayed());
+
+        bookName = "Peter Pan";
+        libraryPage.selectBook(bookName);
+        startTimer("Open book: " + bookName);
+        assertTrue(bookPage.verifyBookImageIsDisplayed());
+        stopTimer();
+
+        bookPage.tapMenu();
+        sleep(1000);
+        mainMenuPage.tapLibraryFromBook();
+        assertTrue(libraryPage.verifyFirstBookImageIsDisplayed());
+
+        libraryPage.selectBook(bookName);
+        startTimer("Open book: " + bookName);
+        assertTrue(bookPage.verifyBookImageIsDisplayed());
+        stopTimer();
+
+        bookPage.tapMenu();
+        sleep(1000);
+        mainMenuPage.tapLibraryFromBook();
+        assertTrue(libraryPage.verifyFirstBookImageIsDisplayed());
+
+        sleep(40000);
+        libraryPage.swipeFromBottomToTop(2); // 7
+        bookName = "Tarzan of the Apes";
+        libraryPage.selectBook(bookName);
+        startTimer("Open book: " + bookName);
+        assertTrue(bookPage.verifyBookImageIsDisplayed());
+        stopTimer();
+
+        bookPage.tapMenu();
+        sleep(1000);
+        mainMenuPage.tapLibraryFromBook();
+        assertTrue(libraryPage.verifyFirstBookImageIsDisplayed());
+
+        libraryPage.swipeFromBottomToTop(2); // 7
+        libraryPage.selectBook(bookName);
+        startTimer("Open book: " + bookName);
+        assertTrue(bookPage.verifyBookImageIsDisplayed());
+        stopTimer();
+
+        bookPage.tapMenu();
+        sleep(1000);
+        mainMenuPage.tapLibraryFromBook();
+        assertTrue(libraryPage.verifyFirstBookImageIsDisplayed());
+
+        libraryPage.swipeFromBottomToTop(1); //4
+        bookName = "Narrative of the Life of Frederick Douglass";
+        libraryPage.selectBook(bookName);
+        startTimer("Open book: " + bookName);
+        assertTrue(bookPage.verifyBookImageIsDisplayed());
+        stopTimer();
+
+        bookPage.tapMenu();
+        sleep(1000);
+        mainMenuPage.tapLibraryFromBook();
+        assertTrue(libraryPage.verifyFirstBookImageIsDisplayed());
+
+        libraryPage.swipeFromBottomToTop(1); //4
+        libraryPage.selectBook(bookName);
+        startTimer("Open book: " + bookName);
+        assertTrue(bookPage.verifyBookImageIsDisplayed());
+        stopTimer();
+
+        bookPage.tapMenu();
+        sleep(1000);
+        mainMenuPage.tapLibraryFromBook();
+        assertTrue(libraryPage.verifyFirstBookImageIsDisplayed());
+
+        libraryPage.swipeFromBottomToTop(1); //5
+        bookName = "King Solomon's Mines";
+        libraryPage.selectBook(bookName);
+        startTimer("Open book: " + bookName);
+        assertTrue(bookPage.verifyBookImageIsDisplayed());
+        stopTimer();
+
+        bookPage.tapMenu();
+        sleep(1000);
+        mainMenuPage.tapLibraryFromBook();
+        assertTrue(libraryPage.verifyFirstBookImageIsDisplayed());
+
+        libraryPage.swipeFromBottomToTop(1); //5
+        libraryPage.selectBook(bookName);
+        startTimer("Open book: " + bookName);
+        assertTrue(bookPage.verifyBookImageIsDisplayed());
+        stopTimer();
+
+        bookPage.tapMenu();
+        sleep(1000);
+        mainMenuPage.tapLibraryFromBook();
+        assertTrue(libraryPage.verifyFirstBookImageIsDisplayed());
+
+        libraryPage.swipeFromBottomToTop(1); //6
+        bookName = "David Crockett: His Life and Adventures";
+        libraryPage.selectBook(bookName);
+        startTimer("Open book: " + bookName);
+        assertTrue(bookPage.verifyBookImageIsDisplayed());
+        stopTimer();
+
+        bookPage.tapMenu();
+        sleep(1000);
+        mainMenuPage.tapLibraryFromBook();
+        assertTrue(libraryPage.verifyFirstBookImageIsDisplayed());
+
+        libraryPage.swipeFromBottomToTop(1); //6
+        libraryPage.selectBook(bookName);
+        startTimer("Open book: " + bookName);
+        assertTrue(bookPage.verifyBookImageIsDisplayed());
+        stopTimer();
+
+        bookPage.tapMenu();
+        sleep(1000);
+        mainMenuPage.tapLibraryFromBook();
+        assertTrue(libraryPage.verifyFirstBookImageIsDisplayed());
+
+        bookName = "The Kreutzer Sonata";
+        libraryPage.selectBook(bookName);
+        startTimer("Open book: " + bookName);
+        assertTrue(bookPage.verifyBookImageIsDisplayed());
+        stopTimer();
+
+        bookPage.tapMenu();
+        sleep(1000);
+        mainMenuPage.tapLibraryFromBook();
+        assertTrue(libraryPage.verifyFirstBookImageIsDisplayed());
+
+        libraryPage.selectBook(bookName);
+        startTimer("Open book: " + bookName);
+        assertTrue(bookPage.verifyBookImageIsDisplayed());
+        stopTimer();
+
+        bookPage.tapMenu();
+        sleep(1000);
+        mainMenuPage.tapLibraryFromBook();
+        assertTrue(libraryPage.verifyFirstBookImageIsDisplayed());
+
+        bookName = "The Turn of the Screw";
+        libraryPage.selectBook(bookName);
+        startTimer("Open book: " + bookName);
+        assertTrue(bookPage.verifyBookImageIsDisplayed());
+        stopTimer();
+
+        bookPage.tapMenu();
+        sleep(1000);
+        mainMenuPage.tapLibraryFromBook();
+        assertTrue(libraryPage.verifyFirstBookImageIsDisplayed());
+
+        libraryPage.selectBook(bookName);
+        startTimer("Open book: " + bookName);
+        assertTrue(bookPage.verifyBookImageIsDisplayed());
+        stopTimer();
+
+        bookPage.tapMenu();
+        sleep(1000);
+        mainMenuPage.tapLibraryFromBook();
+        assertTrue(libraryPage.verifyFirstBookImageIsDisplayed());
+
+        sleep(40000);
+        libraryPage.swipeFromBottomToTop(2); //10
+        bookName = "A Connecticut Yankee in King Arthur's Court";
+        libraryPage.selectBook(bookName);
+        startTimer("Open book: " + bookName);
+        assertTrue(bookPage.verifyBookImageIsDisplayed());
+        stopTimer();
+
+        bookPage.tapMenu();
+        sleep(1000);
+        mainMenuPage.tapLibraryFromBook();
+        assertTrue(libraryPage.verifyFirstBookImageIsDisplayed());
+
+        sleep(40000);
+        libraryPage.swipeFromBottomToTop(2); //10
+        libraryPage.selectBook(bookName);
+        startTimer("Open book: " + bookName);
+        assertTrue(bookPage.verifyBookImageIsDisplayed());
+        stopTimer();
+
+        bookPage.tapMenu();
+        sleep(1000);
+        mainMenuPage.tapLibraryFromBook();
+        assertTrue(libraryPage.verifyFirstBookImageIsDisplayed());
+
+        libraryPage.swipeFromBottomToTop(1); //5
+        bookName = "Candide";
+        libraryPage.selectBook(bookName);
+        startTimer("Open book: " + bookName);
+        assertTrue(bookPage.verifyBookImageIsDisplayed());
+        stopTimer();
+
+        bookPage.tapMenu();
+        sleep(1000);
+        mainMenuPage.tapLibraryFromBook();
+        assertTrue(libraryPage.verifyFirstBookImageIsDisplayed());
+
+        libraryPage.swipeFromBottomToTop(1); //5
+        libraryPage.selectBook(bookName);
+        startTimer("Open book: " + bookName);
+        assertTrue(bookPage.verifyBookImageIsDisplayed());
+        stopTimer();
+
+        bookPage.tapMenu();
+        sleep(1000);
+        mainMenuPage.tapLibraryFromBook();
+        assertTrue(libraryPage.verifyFirstBookImageIsDisplayed());
     }
 
     @Test()

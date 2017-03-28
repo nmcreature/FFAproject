@@ -12,27 +12,27 @@ import java.util.List;
 
 import static org.ffa.framework.BrowserFactory.getDriver;
 
-public class LibraryPage extends BasePage {
+public class LibraryPage extends ReaderBasePage {
 
-    private String book = "//android.webkit.WebView[1]/android.widget.ListView[2]//android.view.View[contains(@content-desc, \"%s\")]";
+    private String book = "//android.webkit.WebView[1]//android.widget.ListView[1]//android.view.View[contains(@content-desc, \"%s\")]";
 
 
     @FindBy(xpath = "//div[@class='manage-publications-mode']//li")
     private List<WebElement> listOfMenuItems;
 
-    @FindBy(xpath = "//android.webkit.WebView[1]/android.widget.ListView[1]/android.view.View[2]/android.view.View[2]")
+    @FindBy(xpath = "//android.webkit.WebView[1]//android.widget.ListView[1]//android.view.View[contains(@content-desc, \"Library\")]")
     private Button libraryButton;
 
-    @FindBy(xpath = "//android.webkit.WebView[1]/android.widget.ListView[1]//android.view.View[contains(@content-desc, \"My Books\")]")
+    @FindBy(xpath = "//android.webkit.WebView[1]//android.widget.ListView[1]//android.view.View[contains(@content-desc, \"My Books\")]")
     private Button myBooksButton;
 
-    @FindBy(xpath = "//android.webkit.WebView[1]/android.widget.ListView[1]/android.view.View[3]/android.view.View[2]")
+    @FindBy(xpath = "//android.webkit.WebView[1]//android.widget.ListView[1]//android.view.View[contains(@content-desc, \"Study\")]")
     private Button studyButton;
 
-    @FindBy(xpath = "//android.webkit.WebView[1]/android.widget.ListView[2]/android.view.View[1]")
+    @FindBy(xpath = "//android.webkit.WebView[1]/android.view.View[1]/android.view.View[1]/android.view.View[3]/android.widget.ListView[1]/android.view.View[1]")
     private Link firstBook;
 
-    @FindBy(xpath = "//android.webkit.WebView[1]/android.widget.ListView[2]/android.view.View[1]/android.widget.Image[1]")
+    @FindBy(xpath = "//android.webkit.WebView[1]/android.view.View[1]/android.view.View[1]/android.view.View[3]/android.widget.ListView[1]/android.view.View[1]/android.view.View[1]/android.view.View[2]/android.widget.Image[1]")
     private Link firstBookImage;
 
     @FindBy(xpath = "//android.webkit.WebView[1]/android.widget.ListView[1]")
@@ -44,25 +44,25 @@ public class LibraryPage extends BasePage {
     @FindBy(xpath = "//android.webkit.WebView[1]/android.widget.ListView[3]/android.view.View[2]/android.view.View[1]")
     private Link autobiographies;
 
-    @FindBy(xpath = "//android.webkit.WebView[1]/android.view.View[6]/android.widget.EditText[1]")
+    @FindBy(xpath = "//android.webkit.WebView[1]/android.view.View[1]/android.view.View[1]/android.view.View[2]/android.view.View[1]/android.view.View[2]/android.widget.EditText[1]")
     private TextInput filter;
 
-    @FindBy(xpath = "//android.webkit.WebView[1]/android.view.View[15]")
+    @FindBy(xpath = "//android.webkit.WebView[1]/android.view.View[1]/android.view.View[1]/android.view.View[7]")
     private Label message;
 
-    @FindBy(xpath = "//android.webkit.WebView[1]/android.view.View[16]")
+    @FindBy(xpath = "//android.webkit.WebView[1]/android.view.View[1]/android.view.View[1]/android.view.View[7]")
     private Label todo;
 
-    @FindBy(xpath = "//android.webkit.WebView[1]/android.view.View[4]/android.widget.EditText[1]")
+    @FindBy(xpath = "//android.webkit.WebView[1]/android.view.View[1]/android.view.View[1]/android.view.View[2]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.widget.EditText[1]")
     private TextInput searchLibrary;
 
-    @FindBy(xpath = "//android.webkit.WebView[1]/android.view.View[5]/android.widget.EditText[1]")
+    @FindBy(xpath = "//android.webkit.WebView[1]/android.view.View[1]/android.view.View[1]/android.view.View[2]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.widget.EditText[1]")
     private TextInput searchByKeyword;
 
-    @FindBy(xpath = "//android.webkit.WebView[1]/android.view.View[10]")
+    @FindBy(xpath = "//android.webkit.WebView[1]/android.view.View[1]/android.view.View[1]/android.view.View[4]")
     private Label myProfile;
 
-    @FindBy(xpath = "//android.webkit.WebView[1]/android.view.View[10]")
+    @FindBy(xpath = "//android.webkit.WebView[1]/android.view.View[1]/android.view.View[1]/android.view.View[4]")
     private Label about;
 
     String info = "//android.webkit.WebView[1]/android.widget.ListView[2]/android.view.View[12]/android.view.View[contains(@content-desc, \"%s\")]/../android.view.View[contains(@content-desc, \"Image for details\")]";
@@ -103,21 +103,21 @@ public class LibraryPage extends BasePage {
 
     @Step("Click Categories Menu")
     public void clickCategoriesMenu() {
-        By menuPath = MobileBy.xpath("//android.webkit.WebView[1]/android.view.View[5]");
+        By menuPath = MobileBy.xpath("//android.webkit.WebView[1]/android.view.View[1]/android.view.View[1]/android.view.View[2]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]");
         WebElement element = find(menuPath);
         ((AndroidDriver) getDriver()).tap(1, element.getLocation().getX() + 10, element.getLocation().getY() + 10, 100);
     }
 
     @Step("Select category - Autobiographies")
     public void selectAutobiographies() {
-        By menuItem = MobileBy.xpath("//android.webkit.WebView[1]/android.widget.ListView[3]/android.view.View[2]/android.view.View[1]");
+        By menuItem = MobileBy.xpath("//android.webkit.WebView[1]//android.view.View[7]//android.widget.ListView[1]//android.view.View[contains(@content-desc, \"Autobiographies\")]");
         WebElement element = find(menuItem);
         ((AndroidDriver) getDriver()).tap(1, element.getLocation().getX() + 10, element.getLocation().getY() + 10, 100);
     }
 
     @Step("Select category - All categories")
     public void selectAllCategories() {
-        By menuItem = MobileBy.xpath("//android.webkit.WebView[1]/android.widget.ListView[3]/android.view.View[1]");
+        By menuItem = MobileBy.xpath("//android.webkit.WebView[1]//android.view.View[7]//android.widget.ListView[1]//android.view.View[contains(@content-desc, \"All Categories\")]");
         WebElement element = find(menuItem);
         ((AndroidDriver) getDriver()).tap(1, element.getLocation().getX() + 10, element.getLocation().getY() + 10, 100);
     }

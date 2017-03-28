@@ -21,9 +21,7 @@ public class MainMenuTest extends BaseTest {
     public void setUp() throws InterruptedException {
         super.beforeTest();
         LoginPage loginPage = new LoginPage();
-        loginPage.enterLogin("sokd@isddesign.com");
-        loginPage.enterPassword("xv443ix7tr"); //go7y7kz37q zk2kt5r0ne
-        loginPage.clickLogIn();
+        loginPage.login();
     }
 
     @Test()
@@ -32,54 +30,56 @@ public class MainMenuTest extends BaseTest {
         LibraryPage libraryPage = new LibraryPage();
         assertTrue(libraryPage.verifyFirstBookIsDisplayed());
 
-        sleep(10000);
-        libraryPage.tapMenu();
+        sleep(5000);
+        libraryPage.tapMenuByCoordinates();
         MainMenuPage mainMenuPage = new MainMenuPage();
-        sleep(1000);
+        sleep(3000);
         mainMenuPage.tapMessages();
         startTimer("Open Messages: ");
         assertTrue(libraryPage.verifyMessageIsDisplayed());
         stopTimer();
 
-        sleep(1500);
-        libraryPage.tapMenu();
-        libraryPage.tapMenu();
-        sleep(1000);
+        sleep(2000);
+        libraryPage.tapMenuByCoordinates();
+        sleep(2000);
+        libraryPage.tapMenuByCoordinates();
+        sleep(2000);
 
         mainMenuPage.tapToDo();
         startTimer("Open To Do: ");
         assertTrue(libraryPage.verifyToDoIsDisplayed());
         stopTimer();
 
-        sleep(1500);
-        libraryPage.tapMenu();
-        libraryPage.tapMenu();
-        sleep(1000);
+        sleep(2000);
+        libraryPage.tapMenuByCoordinates();
+        sleep(2000);
+        libraryPage.tapMenuByCoordinates();
+        sleep(2000);
 
         mainMenuPage.tapLibrary();
         startTimer("Open Library: ");
         assertTrue(libraryPage.verifyFirstBookIsDisplayed());
         stopTimer();
 
-        sleep(1500);
-        libraryPage.tapMenu();
-        sleep(1000);
+        sleep(2000);
+        libraryPage.tapMenuByCoordinates();
+        sleep(2000);
 
         mainMenuPage.tapAdvancedSearch();
         startTimer("Open Advanced Search: ");
         assertTrue(libraryPage.verifySearchLibraryIsDisplayed());
         stopTimer();
 
-        sleep(1500);
+        sleep(2000);
         libraryPage.tapMenuByCoordinates();
-        sleep(1000);
+        sleep(2000);
 
         mainMenuPage.tapDictionary();
         startTimer("Open Dictionary: ");
         assertTrue(libraryPage.verifySearchByKeywordIsDisplayed());
         stopTimer();
 
-        sleep(1500);
+        sleep(2000);
         libraryPage.tapMenuByCoordinates();
         sleep(2000);
 //        libraryPage.tapMenuByCoordinates();

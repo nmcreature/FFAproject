@@ -32,7 +32,7 @@ public class HelloWorld extends BaseTest {
         }
 
         for (String context : contexts) {
-            if(context.contains("WEBVIEW")) {
+            if(context.contains("CHROMIUM")) {
                 System.out.println(context);
                 ((AppiumDriver) getDriver()).context(context);
                 System.out.println("context is set");
@@ -41,7 +41,7 @@ public class HelloWorld extends BaseTest {
         }
         sleep(10000);
         System.out.println("________________________");
-        getDriver().findElement(By.className("menu-toggle")).click();
+        getDriver().findElement(By.xpath("//input[@ng-model=\"loginInfo.userName\"]")).sendKeys("someUser");
 //        getDriver().findElement(By.xpath("//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.webkit.WebView[1]/android.webkit.WebView[1]/android.view.View[2]")).click();
     }
 }

@@ -20,9 +20,7 @@ public class NavigationTests extends BaseTest {
     public void setUp() throws InterruptedException {
         super.beforeTest();
         LoginPage loginPage = new LoginPage();
-        loginPage.enterLogin("sokd@isddesign.com");
-        loginPage.enterPassword("xv443ix7tr"); //go7y7kz37q zk2kt5r0ne
-        loginPage.clickLogIn();
+        loginPage.login();
         startTimer("Login");
     }
 
@@ -36,6 +34,7 @@ public class NavigationTests extends BaseTest {
         libraryPage.tapMyBooks();
         libraryPage.tapLibrary();
         startTimer("Navigate MyBooks -> Library");
+        sleep(300);
         assertTrue(libraryPage.verifyFirstBookIsDisplayed());
         stopTimer();
 

@@ -5,16 +5,26 @@ import io.appium.java_client.android.AndroidDriver;
 import org.ffa.framework.BrowserFactory;
 import org.ffa.framework.Utilities;
 import org.ffa.webelements.Button;
+import org.ffa.webelements.Element;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.support.FindBy;
 import ru.yandex.qatools.allure.annotations.Step;
+import ru.yandex.qatools.htmlelements.annotations.Timeout;
 import ru.yandex.qatools.htmlelements.loader.HtmlElementLoader;
 
 import static org.ffa.framework.BrowserFactory.getDriver;
 
 public abstract class BasePage extends Utilities {
 
-    @FindBy(xpath = "//android.webkit.WebView[1]/android.view.View[1]/android.view.View[1]")
+    @Timeout(1)
+    @FindBy(xpath = "//div[@class='longRunningInputBlocker']")
+    public Element inputBlocker;
+
+    @Timeout(1)
+    @FindBy(xpath = "//div[@class='longRunningOverlay']")
+    public Element overlay;
+
+    @FindBy(xpath = "//android.webkit.WebView[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]")
     private Button menuButton;
 
     public BasePage(){
