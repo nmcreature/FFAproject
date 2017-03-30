@@ -40,7 +40,7 @@ public class HelloWorld extends BaseTest {
             }
         }
         sleep(10000);
-        System.out.println("________________________");
+//        System.out.println("________________________");
         getDriver().findElement(By.xpath("//input[@ng-model=\"loginInfo.userName\"]")).sendKeys("someUser");
 //        getDriver().findElement(By.xpath("//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.webkit.WebView[1]/android.webkit.WebView[1]/android.view.View[2]")).click();
     }
